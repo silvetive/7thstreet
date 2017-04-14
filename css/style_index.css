@@ -1,0 +1,602 @@
+.demo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  height: 20000px;
+  opacity: 0.1;
+  background-image: url("../image/demo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 0.3s; }
+
+#headbanner {
+  /*width: 100%;*/
+  padding: 0px 40px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  @media screen and (max-width: 767px) {
+    #headbanner {
+      padding: 0px 10px; } }
+  #headbanner > div {
+    position: relative;
+    height: 39vw; }
+    @media screen and (max-width: 767px) {
+      #headbanner > div {
+        padding: 0px;
+        height: calc(100vh - 100px); } }
+  #headbanner #sld-01 {
+    font-size: 7rem; }
+    @media screen and (max-width: 991px) {
+      #headbanner #sld-01 {
+        font-size: 5rem; } }
+    @media screen and (max-width: 767px) {
+      #headbanner #sld-01 {
+        font-size: 4rem; } }
+    #headbanner #sld-01 .sld-bg {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      bottom: 0%;
+      background-image: url("../image/slide/image/sld01.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    #headbanner #sld-01 .sld-obj-a {
+      position: absolute;
+      top: 30%;
+      left: auto;
+      right: 5%;
+      bottom: auto;
+      font-size: 1em;
+      line-height: 1.1em;
+      font-weight: 500;
+      color: white;
+      text-align: right;
+      z-index: 10; }
+      #headbanner #sld-01 .sld-obj-a > p {
+        margin-top: 3%;
+        font-size: 0.38em;
+        line-height: 1.2em; }
+      #headbanner #sld-01 .sld-obj-a > .sld-btn {
+        display: inline-block;
+        padding: 10px;
+        width: 50%;
+        max-width: 300px;
+        border: 1px solid white;
+        font-size: 0.38em;
+        color: white;
+        line-height: normal;
+        text-align: center; }
+
+#intro {
+  padding: 30px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  height: 1900px;
+  font-size: 0px; }
+  @media screen and (max-width: 767px) {
+    #intro {
+      padding: 6px;
+      height: 400px; } }
+  #intro .intro-img {
+    position: relative;
+    height: 25%;
+    width: 33.33%; }
+    @media screen and (max-width: 767px) {
+      #intro .intro-img {
+        height: 25%; } }
+    #intro .intro-img.big {
+      height: 50%; }
+    #intro .intro-img > div {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      background-color: grey;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      @media screen and (max-width: 767px) {
+        #intro .intro-img > div {
+          top: 4px;
+          left: 4px;
+          right: 4px;
+          bottom: 4px; } }
+
+#showcase {
+  padding-bottom: 40px;
+  background-color: #F2F2F2; }
+  #showcase .row {
+    max-width: 1600px;
+    margin: auto; }
+  #showcase .showcase-label {
+    margin: 30px 0px;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #8C8C8C; }
+    @media screen and (max-width: 767px) {
+      #showcase .showcase-label {
+        margin: 30px 0px 0px;
+        font-size: 2rem; } }
+  #showcase .showcase-tabs {
+    margin: 43px 0px;
+    text-align: right; }
+    @media screen and (max-width: 767px) {
+      #showcase .showcase-tabs {
+        margin: 0px;
+        display: none; } }
+    #showcase .showcase-tabs > .showcase-tab {
+      display: inline-block;
+      padding: 5px 16px;
+      margin-left: 20px;
+      color: #8C8C8C;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: normal;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: 0.3s; }
+      #showcase .showcase-tabs > .showcase-tab.active {
+        border-color: #8C8C8C; }
+  #showcase .showcase-display {
+    padding: 0px 0px 40px; }
+    @media screen and (max-width: 767px) {
+      #showcase .showcase-display {
+        padding: 0px; } }
+  @media screen and (max-width: 767px) {
+    #showcase .showcase-side {
+      padding: 40px 0px; } }
+  #showcase .showcase-side > div {
+    padding: 0px; }
+  #showcase .showcase-side > div:first-child {
+    margin-bottom: 40px; }
+  @media screen and (max-width: 767px) {
+    #showcase .showcase-bottom {
+      padding: 0px !important; }
+      #showcase .showcase-bottom > div {
+        margin-bottom: 40px;
+        padding: 0px; } }
+  @media screen and (max-width: 767px) {
+    #showcase .product-present {
+      padding: 0px;
+      margin: 0px; } }
+  #showcase .product-present > div {
+    background-image: url("../image/product/present_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: calc(100% + 10px); }
+
+#article-content {
+  padding-bottom: 40px; }
+  @media screen and (max-width: 767px) {
+    #article-content {
+      padding-bottom: 0px; } }
+  #article-content .content-spotlight {
+    font-size: 0px; }
+    #article-content .content-spotlight > div {
+      display: inline-block;
+      height: 700px;
+      /*width: 50%;*/
+      font-size: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      @media screen and (max-width: 767px) {
+        #article-content .content-spotlight > div {
+          height: 400px; } }
+  #article-content .content-list {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    #article-content .content-list .ig-stage {
+      position: relative;
+      width: 100%;
+      padding: 20px 0px 40px;
+      font-size: 0px; }
+      #article-content .content-list .ig-stage .ig-rail {
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden; }
+      #article-content .content-list .ig-stage .ig-train {
+        transition: 0.5s;
+        /*transform: translateX(-16.66vw);*/ }
+        @media screen and (max-width: 991px) {
+          #article-content .content-list .ig-stage .ig-train {
+            /*transform: translateX(0vw);*/ } }
+      #article-content .content-list .ig-stage .gallery-group {
+        display: inline-block;
+        width: 25%;
+        vertical-align: top;
+        opacity: 0.3;
+        transition: 0.3s; }
+        @media screen and (max-width: 991px) {
+          #article-content .content-list .ig-stage .gallery-group {
+            display: block;
+            width: 100%; }
+            #article-content .content-list .ig-stage .gallery-group:nth-child(n+5) {
+              display: none;
+              background-color: red; } }
+        #article-content .content-list .ig-stage .gallery-group.gallery-firstgap {
+          width: 12.5%; }
+          @media screen and (max-width: 991px) {
+            #article-content .content-list .ig-stage .gallery-group.gallery-firstgap {
+              display: none; } }
+        #article-content .content-list .ig-stage .gallery-group.fadein {
+          opacity: 1; }
+      #article-content .content-list .ig-stage .gallery-img {
+        position: relative;
+        /*padding: 20px;*/
+        height: 16.66vw;
+        cursor: pointer; }
+        @media screen and (max-width: 991px) {
+          #article-content .content-list .ig-stage .gallery-img {
+            height: 50vw; } }
+        #article-content .content-list .ig-stage .gallery-img > div {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          bottom: 5px;
+          /*width: 100%;*/
+          /*height: 22.21vw;*/
+          background-color: rgba(0, 0, 0, 0.5);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+      #article-content .content-list .ig-stage .gallery-label {
+        display: inline-block;
+        margin: 12px 0px 0px;
+        padding: 2px 6px;
+        width: 70%;
+        font-size: 1.8rem;
+        max-height: 3.2em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: grey;
+        white-space: normal; }
+        @media screen and (max-width: 991px) {
+          #article-content .content-list .ig-stage .gallery-label {
+            padding: 0px 6px 6px;
+            font-size: 1rem; } }
+      #article-content .content-list .ig-stage .gallery-readsign {
+        display: inline-block;
+        float: right;
+        margin: 16px 5px 0px;
+        width: 20%;
+        padding: 2px;
+        border: 2px solid #0D9243;
+        vertical-align: top;
+        color: #0D9243;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s; }
+        #article-content .content-list .ig-stage .gallery-readsign:hover {
+          color: white;
+          background-color: #0D9243; }
+      #article-content .content-list .ig-stage .gallery-date {
+        display: block;
+        margin: 10px 5px;
+        padding-top: 10px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 0px solid rgba(0, 0, 0, 0.5);
+        border-top-width: 1px;
+        opacity: 0.4; }
+      #article-content .content-list .ig-stage .ig-btn {
+        position: absolute;
+        top: 5px;
+        bottom: 40px;
+        width: 12.5vw;
+        /*background-color: white;*/
+        opacity: 0.7;
+        z-index: 300;
+        cursor: pointer; }
+        @media screen and (max-width: 991px) {
+          #article-content .content-list .ig-stage .ig-btn {
+            display: none;
+            opacity: 0; } }
+        #article-content .content-list .ig-stage .ig-btn.next {
+          right: 0px; }
+        #article-content .content-list .ig-stage .ig-btn.prev {
+          left: 0px; }
+        #article-content .content-list .ig-stage .ig-btn#contentreadmore {
+          font-size: 3rem;
+          /*background-color: #CBCBCC;*/
+          background-color: white;
+          /*color: #8C8C8C;*/
+          color: #0D9243;
+          border: 3px solid #0D9243;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          opacity: 0;
+          transition: 0.1s; }
+          #article-content .content-list .ig-stage .ig-btn#contentreadmore.active {
+            opacity: 1;
+            transition: 0.3s 0.5s;
+            transform: translateX(-20%); }
+          #article-content .content-list .ig-stage .ig-btn#contentreadmore > div {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+            font-size: 3rem; }
+
+#storedistributor {
+  background-color: #F4F4F4; }
+  @media screen and (max-width: 767px) {
+    #storedistributor {
+      padding-bottom: 30px; } }
+  #storedistributor .storedistributor-stage {
+    max-width: 1400px;
+    margin: auto; }
+  #storedistributor .storedistributor-text {
+    min-height: 260px; }
+    @media screen and (max-width: 767px) {
+      #storedistributor .storedistributor-text {
+        min-height: auto; } }
+  #storedistributor .storedistributor-label {
+    color: #0D9243;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 30px; }
+    @media screen and (max-width: 767px) {
+      #storedistributor .storedistributor-label {
+        font-size: 1.3rem; } }
+  #storedistributor .storedistributor-btn {
+    display: inline-block;
+    padding: 7px 16px;
+    margin-top: 20px;
+    max-width: 260px;
+    width: 50%;
+    color: #8C8C8C;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid #8C8C8C;
+    cursor: pointer; }
+    @media screen and (max-width: 767px) {
+      #storedistributor .storedistributor-btn {
+        width: 100%;
+        max-width: none; } }
+  #storedistributor .storedistributor-img {
+    min-height: 260px;
+    background-image: url("../image/store.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: grey;
+    height: 12vw; }
+
+#instagram {
+  padding: 80px 0px 40px; }
+  #instagram .instagram-label {
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #7E7E7E;
+    text-align: center; }
+    #instagram .instagram-label p {
+      font-size: 0.5em;
+      font-weight: 400;
+      max-width: 30vw;
+      margin: auto; }
+  #instagram .ig-stage {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px 40px;
+    font-size: 0px; }
+    #instagram .ig-stage .ig-rail {
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden; }
+    #instagram .ig-stage .ig-train {
+      transition: 0.5s;
+      /*transform: translateX(-16.66vw);*/ }
+      @media screen and (max-width: 991px) {
+        #instagram .ig-stage .ig-train {
+          /*transform: translateX(0vw);*/ } }
+    #instagram .ig-stage .gallery-group {
+      display: inline-block;
+      width: 20%;
+      vertical-align: top;
+      opacity: 0.3;
+      transition: 0.3s; }
+      @media screen and (max-width: 991px) {
+        #instagram .ig-stage .gallery-group {
+          display: block;
+          width: 100%; }
+          #instagram .ig-stage .gallery-group:nth-child(n+5) {
+            display: none;
+            background-color: red; } }
+      #instagram .ig-stage .gallery-group.gallery-firstgap {
+        width: 10%; }
+        #instagram .ig-stage .gallery-group.gallery-firstgap > .gallery-img {
+          padding-top: 200%; }
+        @media screen and (max-width: 991px) {
+          #instagram .ig-stage .gallery-group.gallery-firstgap {
+            display: none; } }
+      #instagram .ig-stage .gallery-group.fadein {
+        opacity: 1; }
+    #instagram .ig-stage .gallery-img {
+      position: relative;
+      /*padding: 20px;*/
+      padding-top: 100%;
+      /*height: 16.66vw;*/
+      cursor: pointer; }
+      @media screen and (max-width: 991px) {
+        #instagram .ig-stage .gallery-img {
+          height: 50vw; } }
+      #instagram .ig-stage .gallery-img > div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        /*width: 100%;*/
+        /*height: 22.21vw;*/
+        background-color: rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+    #instagram .ig-stage .ig-btn {
+      position: absolute;
+      top: 5px;
+      bottom: 40px;
+      width: 12.5vw;
+      /*background-color: white;*/
+      opacity: 0.7;
+      z-index: 300;
+      cursor: pointer; }
+      @media screen and (max-width: 991px) {
+        #instagram .ig-stage .ig-btn {
+          display: none;
+          opacity: 0; } }
+      #instagram .ig-stage .ig-btn.next {
+        right: 0px; }
+      #instagram .ig-stage .ig-btn.prev {
+        left: 0px; }
+      #instagram .ig-stage .ig-btn#contentreadmore {
+        font-size: 3rem;
+        /*background-color: #CBCBCC;*/
+        background-color: white;
+        /*color: #8C8C8C;*/
+        color: #0D9243;
+        border: 3px solid #0D9243;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        opacity: 0;
+        transition: 0.1s; }
+        #instagram .ig-stage .ig-btn#contentreadmore.active {
+          opacity: 1;
+          transition: 0.3s 0.5s;
+          transform: translateX(-20%); }
+        #instagram .ig-stage .ig-btn#contentreadmore > div {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          transform: translateY(-50%);
+          font-size: 3rem; }
+    #instagram .ig-stage .indicators {
+      margin-top: 30px;
+      width: 100%;
+      text-align: center; }
+    #instagram .ig-stage .indicator {
+      display: inline-block;
+      margin: 0px 4px;
+      height: 10px;
+      width: 4.5vw;
+      background-color: #BBBDC0;
+      transition: 0.3s; }
+      #instagram .ig-stage .indicator.active {
+        background-color: #57585B; }
+
+#footer {
+  padding: 80px 0px;
+  background-color: #F6F6F6; }
+  @media screen and (max-width: 991px) {
+    #footer {
+      display: block;
+      padding: 0px; } }
+  #footer .footer-maps {
+    display: flex;
+    justify-content: center; }
+    @media screen and (max-width: 991px) {
+      #footer .footer-maps {
+        display: block; } }
+  #footer .footer-map {
+    width: 20%;
+    max-width: 240px;
+    color: #797979; }
+    @media screen and (max-width: 991px) {
+      #footer .footer-map {
+        width: 100%;
+        padding: 0px 30px 30px 30px; } }
+  #footer .footer-label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      #footer .footer-label {
+        font-size: 7vw; } }
+  #footer .footer-bar {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  #footer .footer-link > a {
+    display: block;
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 500; }
+  #footer .footer-items {
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    @media screen and (max-width: 767px) {
+      #footer .footer-items {
+        display: block; } }
+  #footer .footer-item {
+    padding-top: 60px;
+    width: 33%;
+    max-width: 300px;
+    text-align: center; }
+    @media screen and (max-width: 767px) {
+      #footer .footer-item {
+        width: 100%;
+        max-width: none; } }
+  #footer .footer-icon {
+    height: 60px; }
+  #footer .footer-data {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #797979; }
+    #footer .footer-data:first-child {
+      padding-top: 20px; }
+
+#copyright .copyright-label {
+  float: left;
+  line-height: 60px;
+  padding-left: 20px;
+  opacity: 0.7; }
+  @media screen and (max-width: 767px) {
+    #copyright .copyright-label {
+      width: 70%;
+      font-size: 0.65em;
+      line-height: 12px;
+      padding-top: 18px; } }
+
+#copyright .backtotop {
+  float: right;
+  padding: 20px; }
+  #copyright .backtotop > img {
+    width: 30px; }

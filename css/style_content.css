@@ -1,0 +1,333 @@
+#content-title {
+  opacity: 0;
+  -webkit-animation: labelfadein 1s 1.5s forwards;
+  animation: labelfadein 1s 1.5s forwards; }
+  #content-title div {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.6; }
+
+#content-label {
+  margin: auto;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 80px; }
+  #content-label .label-bar {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    -webkit-animation: labelfadein 1s 2.5s forwards;
+    animation: labelfadein 1s 2.5s forwards; }
+  #content-label .label-text {
+    opacity: 0;
+    -webkit-animation: labelfadein 1s 1.8s forwards;
+    animation: labelfadein 1s 1.8s forwards; }
+    #content-label .label-text label {
+      color: #0D9243; }
+    #content-label .label-text span {
+      margin-right: 30px; }
+
+@-webkit-keyframes labelfadein {
+  0% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 0.8; } }
+
+@keyframes labelfadein {
+  0% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 0.8; } }
+
+#content-headline {
+  margin-bottom: 90px; }
+  #content-headline:hover .content-headline-image {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03); }
+  #content-headline .content-headline {
+    position: relative;
+    height: 700px;
+    overflow: hidden; }
+  #content-headline .content-headline-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    transition: 0.7s; }
+  #content-headline .curtain {
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    transition: 0.5s;
+    -webkit-animation: opencurtain 0.5s 1s forwards;
+    animation: opencurtain 0.5s 1s forwards; }
+
+@-webkit-keyframes opencurtain {
+  0% {
+    /*transform: translateY(-100%);*/ }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+@keyframes opencurtain {
+  0% {
+    /*transform: translateY(-100%);*/ }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+#content-main {
+  margin: auto;
+  max-width: 1200px; }
+  #content-main p {
+    color: grey;
+    padding: 0px 5% 40px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2em; }
+  #content-main .content-image {
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    margin-bottom: 80px; }
+    #content-main .content-image > div {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      bottom: 0%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.7s; }
+      #content-main .content-image > div:hover {
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03); }
+  #content-main .socialshare {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    padding: 12px;
+    color: #0D9243;
+    background-color: white;
+    opacity: 0;
+    -webkit-transform: translate(200%, -50%);
+    -ms-transform: translate(200%, -50%);
+    transform: translate(200%, -50%);
+    transition: opacity 0.5s, -webkit-transform 0s 0.5s;
+    transition: opacity 0.5s, transform 0s 0.5s;
+    transition: opacity 0.5s, transform 0s 0.5s, -webkit-transform 0s 0.5s; }
+    @media screen and (max-width: 1400px) {
+      #content-main .socialshare {
+        display: none; } }
+    #content-main .socialshare > div {
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1em; }
+    #content-main .socialshare span {
+      display: block;
+      margin-bottom: 10px;
+      color: grey;
+      font-size: 4rem;
+      cursor: pointer;
+      transition: 0.3s; }
+      #content-main .socialshare span:hover {
+        color: #0D9243; }
+    #content-main .socialshare.active {
+      opacity: 1;
+      -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      transition: opacity 0.5s, -webkit-transform 0s;
+      transition: opacity 0.5s, transform 0s;
+      transition: opacity 0.5s, transform 0s, -webkit-transform 0s; }
+
+#content-next {
+  margin-bottom: 90px; }
+  #content-next:hover .content-next-image {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03); }
+  #content-next .content-next {
+    position: relative;
+    overflow: hidden; }
+  #content-next .content-next-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.7s;
+    z-index: -1; }
+  #content-next .content-next-label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default; }
+    #content-next .content-next-label > div {
+      margin: 25px auto;
+      line-height: 150px;
+      color: white;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center; }
+    #content-next .content-next-label p {
+      line-height: normal; }
+    #content-next .content-next-label .read-btn {
+      display: inline-block;
+      padding: 2px 40px;
+      line-height: normal;
+      border: 2px solid white;
+      cursor: pointer;
+      transition: 0.3s; }
+      #content-next .content-next-label .read-btn:hover {
+        background-color: white;
+        /*color: $subcolor;*/
+        color: black; }
+
+#content-list {
+  margin-bottom: 100px; }
+  #content-list .suggestion {
+    opacity: 0.4;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center; }
+  #content-list .content-list {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    #content-list .content-list .ig-stage {
+      position: relative;
+      width: 100%;
+      padding: 20px 0px 40px;
+      font-size: 0px; }
+      #content-list .content-list .ig-stage .ig-rail {
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden; }
+      #content-list .content-list .ig-stage .ig-train {
+        transition: 0.5s;
+        /*transform: translateX(-16.66vw);*/ }
+        @media screen and (max-width: 991px) {
+          #content-list .content-list .ig-stage .ig-train {
+            /*transform: translateX(0vw);*/ } }
+      #content-list .content-list .ig-stage .gallery-group {
+        display: inline-block;
+        width: 25%;
+        vertical-align: top;
+        opacity: 0.3;
+        transition: 0.3s; }
+        @media screen and (max-width: 991px) {
+          #content-list .content-list .ig-stage .gallery-group {
+            display: block;
+            width: 100%; }
+            #content-list .content-list .ig-stage .gallery-group:nth-child(n+5) {
+              display: none;
+              background-color: red; } }
+        #content-list .content-list .ig-stage .gallery-group.gallery-firstgap {
+          width: 12.5%; }
+          @media screen and (max-width: 991px) {
+            #content-list .content-list .ig-stage .gallery-group.gallery-firstgap {
+              display: none; } }
+          #content-list .content-list .ig-stage .gallery-group.gallery-firstgap * div {
+            background-color: transparent !important; }
+        #content-list .content-list .ig-stage .gallery-group.fadein {
+          opacity: 1; }
+      #content-list .content-list .ig-stage .gallery-img {
+        position: relative;
+        /*padding: 20px;*/
+        height: 16.66vw; }
+        @media screen and (max-width: 991px) {
+          #content-list .content-list .ig-stage .gallery-img {
+            height: 50vw; } }
+        #content-list .content-list .ig-stage .gallery-img:hover .gallery-img-x {
+          -webkit-transform: scale(1.03);
+          -ms-transform: scale(1.03);
+          transform: scale(1.03); }
+        #content-list .content-list .ig-stage .gallery-img > div {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          bottom: 5px;
+          overflow: hidden; }
+        #content-list .content-list .ig-stage .gallery-img .gallery-img-x {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          background-color: rgba(0, 0, 0, 0.5);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: 0.3s; }
+      #content-list .content-list .ig-stage .gallery-label {
+        display: inline-block;
+        margin: 12px 0px 0px;
+        padding: 2px 6px;
+        width: 70%;
+        font-size: 1.8rem;
+        max-height: 3.2em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: grey;
+        white-space: normal; }
+        @media screen and (max-width: 991px) {
+          #content-list .content-list .ig-stage .gallery-label {
+            padding: 0px 6px 6px;
+            font-size: 1rem; } }
+      #content-list .content-list .ig-stage .gallery-readsign {
+        display: inline-block;
+        float: right;
+        margin: 16px 5px 0px;
+        width: 20%;
+        padding: 2px;
+        border: 2px solid #0D9243;
+        vertical-align: top;
+        color: #0D9243;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s; }
+        #content-list .content-list .ig-stage .gallery-readsign:hover {
+          color: white;
+          background-color: #0D9243; }
+      #content-list .content-list .ig-stage .gallery-date {
+        display: block;
+        margin: 10px 5px;
+        padding-top: 10px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 0px solid rgba(0, 0, 0, 0.5);
+        border-top-width: 1px;
+        opacity: 0.4; }

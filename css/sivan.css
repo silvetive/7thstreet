@@ -1,0 +1,35 @@
+.nopadding {
+	padding: 0px;
+}
+.nomargin {
+	margin: 0px;
+}
+.noselect {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;      
+	cursor: default;
+}
+.clear {
+	clear: both;
+}
+
+a,a:hover,a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+.pointer {
+	cursor: pointer;
+}
+.abso {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
