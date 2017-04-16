@@ -103,45 +103,6 @@
 					opacity: 0.5;
 				}
 			}
-			.product-color-list {
-
-			}
-			.product-color {
-				display: inline-block;
-				vertical-align: middle;
-				padding: 4px 0px;
-				font-size: 0px;
-
-				-webkit-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;      
-				cursor: pointer;
-
-				transition: 0.3s;
-
-				&:hover {
-					transform: scale(1.1);
-				}
-			}
-			.product-color-main {
-				display: inline-block;
-				margin: 0px 2px 0px 0px;
-				width: 24px;
-				height: 24px;
-				background-color: grey;
-
-				border: 1px solid rgba(0,0,0,0.2);
-			}
-			.product-color-sub {
-				content: '';
-
-				width: 0px; 
-				height: 0px; 
-				border-top: 22px solid transparent;
-
-				border-right:22px solid dimgrey; 
-			}
 		}
 		.product-sizes {
 			margin-top: 30px;

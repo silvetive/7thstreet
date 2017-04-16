@@ -226,7 +226,16 @@ a, a:hover {
 .product-panel {
   position: relative;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer; }
+  cursor: pointer;
+  animation: productintro 0.5s; }
+
+@keyframes productintro {
+  0% {
+    transform: translateY(15px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
   @media screen and (max-width: 767px) {
     .product-panel {
       margin: 0px 40px; }
@@ -421,6 +430,34 @@ a, a:hover {
         color: white;
         text-align: center;
         background-color: #0F8541; }
+
+.product-color {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 0px;
+  font-size: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s; }
+  .product-color .product-color-main {
+    display: inline-block;
+    margin: 0px 2px 0px 0px;
+    width: 24px;
+    height: 24px;
+    background-color: grey;
+    border: 1px solid #ccc;
+    /*border: 1px solid rgba(0,0,0,0.2);*/ }
+  .product-color .product-color-sub {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 22px solid transparent;
+    border-right: 22px solid dimgrey; }
+  .product-color:hover {
+    transform: scale(1.1); }
 
 #instagram {
   padding: 80px 0px 40px; }
